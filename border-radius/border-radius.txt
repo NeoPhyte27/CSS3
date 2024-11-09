@@ -1,0 +1,13 @@
+border radius masing" sisi
+border-top-right-radius: atas kanan
+border-bottom-right-radius: bawah kanan
+border-bottom-left-radius: bawah kiri
+border-top-left-radius: atas kiri
+
+shorthand
+shorthand border-radius dimulai dari atas kiri hingga bawah kiri
+border-radius :
+    1. atas kiri
+    2. atas kanan
+    3. bawah kanan
+    4. bawah kiri

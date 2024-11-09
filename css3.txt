@@ -3,3 +3,20 @@ kenapa menggunakan CSS3
     - membuat mock-up dengan cepat tanpa bantuan bahasa scripting
     - mengurangi penggunaan gambar = kecepatan load halaman
     - penggunaan selector untuk menghindari penggunaan markup yang boros
+
+properti yang sering digunakan
+- border-radius             - selector lanjut
+- opacity                       - webfont
+- RGBa & HSLa             - media queries
+- box-sizing                  - tranform (2D & 3D)
+- box-shadow               - css transition
+- text-shadow               - css animation
+- css gradient                - css filter
+- background                - FlexBox
+- pseudo-element         - CSS columns
+
+vendor prefixes jika website tidak support
+-webkit- ( chrome )
+-moz- ( mozilla firefox )
+-ie- ( internet explorer )
+-o- ( opera )
