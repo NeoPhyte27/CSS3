@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>radial gradient</title>
+  <style>
+    /* radial mempunyai tipe tersendiri
+    radial-gradient(
+    <tipe(ellipse at circle)> <jangkauan(gradatasi warna)> at <posisi-y> <posisi-x>,
+    <warna-1>,
+    <warna-2>,
+    ...,
+    <warna-n>);
+    */
+
+    div{
+      width: 600px;
+      height: 300px;
+      background: radial-gradient(circle farthest-side at top left,red 50%, green, blue);
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

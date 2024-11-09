@@ -1,0 +1,38 @@
+<!-- Filter
+    blur (px)
+    brightness (angka / %)
+    contrast (angka / %)
+    saturate (angka / %)
+    grayscale (angka / %)        
+    sepia (angka / %)        
+    hue-rotate (adeg)        
+    invert (angka / %)        
+    opacity (angka / %)        
+    drop-shadow (sama seperti box-shadow) 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filter</title>
+  <style>
+    body{
+      text-align: center;
+    }
+    img{
+      width: 700px;
+      filter: blur(2px) grayscale(2);
+      transition: 1s;
+    }
+
+    img:hover{
+      width: 600px;
+      filter: blur(0) grayscale(0) drop-shadow( 0 10px 13px );
+    }
+  </style>
+</head>
+<body>
+  <img src="/background3.png" alt="coba">
+</body>
+</html>

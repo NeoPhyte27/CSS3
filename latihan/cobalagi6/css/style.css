@@ -1,0 +1,68 @@
+/* install font */
+@font-face{
+  font-family: 'bebas';
+  src: url(/font/BebasNeue-Regular.woff) format('woff');
+}
+
+/* style css ku */
+body{
+  font: 18px/36px 'bebas', 'Arial Narrow', Arial, Sans-Serif;
+  background: url(/img/1.png);
+  background-size: cover;
+}
+
+h1{
+  font-size: 80px;
+  margin: 50px auto 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(100, 200, 200, .6);
+}
+
+.container{
+  width: 600px;
+  margin: auto;
+  background-color: #ddd;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 3px 5px rgba(0, 0, 0, .4);
+}
+
+.gallery li{
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 0 3px 5px rgba(0, 0, 0, .4);
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+.gallery li span{
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(200, 200, 200, .4);
+  color: black;
+  text-decoration: none;
+  line-height: 120px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  text-shadow: 0  0 3px white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transform: scale(0) rotate(0);
+  transition: .7s;
+}
+
+.gallery li a:hover span{
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+}
+
+.gallery li,
+.gallery li span,
+.gallery li img{
+  border-radius: 50%;
+}

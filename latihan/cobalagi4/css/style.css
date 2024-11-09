@@ -1,0 +1,175 @@
+/* install font */
+@font-face {
+  font-family: 'bebas';
+  src: url(../font/BebasNeue-Regular.woff) format('woff');
+}
+
+/* style saya */
+body {
+  font: 18px/36px 'bebas', 'Arial Narrow', arial, sans-serif;
+  background-color: #ddd;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+  text-shadow: 0 0 5px white;
+  font-size: 80px;
+}
+
+.container {
+  margin: auto;
+  width: 600px;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.gallery li,
+.gallery li a img, 
+.gallery li span{
+  border-radius: 50%;
+}
+
+.gallery li{
+  width: 120px;
+  height: 120px;
+  /* overflow: hidden; */
+  box-shadow: 0 0 10px 3px #666;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+}
+
+.gallery li span{
+  display: block;
+  height: 120px;
+  width: 120px;
+  background-color: rgba(200, 200, 200, .5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: #666;
+  transform: scale(0) rotate(0);
+  opacity: 0;
+  transition: .7s;
+}
+
+.gallery li a:hover span{
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+}
+
+/* overlay */
+.overlay{
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .0);
+  z-index: 9999;
+  transition: .7s;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.overlay img{
+  max-height: 100%;
+  box-shadow: 0 0 20px 7px rgba(255, 255, 255, .7);
+}
+
+.overlay:target img{
+  animation: zoomDanFade 2s;
+}
+
+.overlay .close{
+  position: relative;
+  top: -535px;
+  right: -415px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.overlay:target .close{
+  animation: slideDownFade .5s .5s forwards;
+}
+
+/* navigasi */
+.next, .prev{
+  width: 63px;
+  height: 96px;
+  background: url(/img/next.png);
+  position: absolute;
+  top: 45%;
+  filter: drop-shadow(0 0 5px white);
+  margin-left: 30px;
+  text-indent: -9999px;
+  opacity: 0;
+}
+
+.prev{
+  background: url(/img/kembali.png);
+  margin-left: -100px;
+}
+
+.overlay:target .next,
+.overlay:target .prev{
+  animation: fadeAjah .5s .5s forwards;
+}
+
+
+/* animasi */
+@keyframes fadeAjah{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes zoomDanFade{
+  0%{
+    transform: scale(0) rotate(80deg);
+    opacity: 0;
+    margin: -150px -250px;
+    border-radius: 50%;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes slideDownFade{
+  0%{
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 0;
+  }
+}

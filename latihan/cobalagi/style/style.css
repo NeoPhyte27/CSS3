@@ -1,0 +1,111 @@
+/* font install */
+@font-face{
+  font-family: 'bebas';
+  src: url(/font/BebasNeue-Regular.woff) format('woff');
+}
+
+/* style ku */
+body{
+  font: 16px/28px arial, san-serif;
+  background-color: #eaeaea;
+  color: #333;
+  background: url(/img/keren.png);
+  background-size: cover;
+}
+
+.container{
+  width: 800px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, .5);
+}
+
+.header{
+  padding: 20px;
+}
+
+.header .judul{
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'bebas';
+  text-shadow: 0 1px 1px #333;
+}
+
+
+.header ul li{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.header a{
+  text-decoration: none;
+  color: salmon;
+  padding: 3px;
+}
+
+.header a:hover{
+  text-decoration: underline;
+  color: lightskyblue;
+}
+
+.hero{
+  height: 300px;
+  background: url(/img/1.png);
+  background-size: cover;
+  background-position: 0 -150px;
+  border-top: 5px solid lightskyblue;
+  border-bottom: 5px solid salmon;
+}
+
+.content .judul2{
+  padding: 2px;
+  font-family: 'bebas';
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.content .penulis{
+  text-align: center;
+  margin-top: -10px;
+  font-size: 13px;
+  padding: 0;
+  text-indent: 0;
+}
+
+.content p{
+  padding: 0 20px 0;
+  text-indent: 20px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.content .penulis a{
+  text-decoration: none;
+  color: #333;
+}
+
+.content .penulis:hover a{
+  text-decoration: underline;
+  color: salmon;
+}
+
+.footer{
+  background-color: black;
+  text-align: center;
+  color: #eaeaea;
+}
+
+.footer .copy{
+  padding: 10px;
+}
+
+.footer .copy a{
+  text-decoration: none;
+  color: #eaeaea;
+}
+.footer .copy:hover a{
+  color: salmon;
+  text-decoration: underline;
+}

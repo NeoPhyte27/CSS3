@@ -1,0 +1,107 @@
+@font-face{
+  font-family: 'bolo';
+  src: url(/fonts/BebasNeue-Regular.woff) format('woff');
+}
+
+body{
+ font: 16px/20px Arial, Sans-serif;
+ background: url(/img/1.png);
+ background-size: cover;
+ color: #333;
+}
+
+.container{
+  width: 800px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .7);
+}
+
+.header{
+  padding: 20px;
+  padding-bottom: 15px;
+  border-bottom: 5px solid skyblue;
+}
+
+.header h1{
+  font-family: 'bolo';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header ul li{
+  display: inline-block;
+  padding-top: 12px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.header a{
+  text-decoration: none;
+  color: salmon;
+}
+
+.header a:hover{
+  background-color: skyblue;
+  color: black;
+}
+
+.hero{
+  height: 400px;
+  background-image: url(/img/keren.png);
+  background-size: cover;
+  background-position: 0 -100px;
+  border-bottom: 5px solid salmon;
+}
+
+.content{
+  padding: 10px;
+}
+
+.content h2{
+  font-family: 'bolo';
+  font-size: 30px;
+  text-align: center;
+}
+
+.content .penulis{
+  font-size: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: -4px;
+  text-indent: 0;
+}
+
+.content .penulis a{
+  text-decoration: none;
+  color: black;
+}
+
+.content .penulis a:hover{
+  color: salmon;
+}
+
+.content p{
+  margin-top: 5px;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.footer{
+  background-color: black;
+  padding: 10px;
+}
+
+.joss{
+  text-align: center;
+  color: white;
+}
+
+.joss a{
+  text-decoration: none;
+  color: white;
+}
+
+.joss a:hover{
+  color: salmon;
+}

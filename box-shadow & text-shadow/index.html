@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box shadow</title>
+  <style>
+    /* urutan properti asli
+    <x-offset>-<y=offset>-<blur>-<color> */
+    /* div{
+      width: 300px;
+      height: 300px;
+      background-color: #39b54a;
+      margin: 50px auto;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    } */
+    /* properti opsional */
+     /* multiple shadow  bisa di gabung dengan shadow lainnya tetapi dipisahkan dengan koma(,) misal
+     <x-offset>-<y=offset>-<blur>-<color>,<x-offset>-<y=offset>-<blur>-<spread>-<color>*/
+    div{
+      width: 300px;
+      height: 300px;
+      background-color: #39b54a;
+      margin: 50px auto;
+      box-shadow:0 0 0 5px red,
+      0 0 0 10px green,
+      0 0 0 15px yellow,
+      0 0 0 20px rgb(0, 0, 255);
+      border-radius: 50%;
+
+    }
+
+        /* membuat bayangan di dalam kotak atau elemen 
+    inset-<x-offset>-<y=offset>-<blur>-<spread>-<color><*/
+    /* div{
+      width: 300px;
+      height: 300px;
+      background-color: #39b54a;
+      margin: 50px auto;
+      box-shadow: inset 0px 30px 10px -20px rgba(0, 0, 0, 0.75);
+      transition: .3s;
+    } */
+
+    /* memberikan spread atau ukuran bayangan lebih besar 
+    <x-offset>-<y=offset>-<blur>-<spread>-<color><*/
+    /* div{
+      width: 300px;
+      height: 300px;
+      background-color: #39b54a;
+      margin: 50px auto;
+      box-shadow: 0px 30px 10px -20px rgba(0, 0, 0, 0.75);
+      transition: .3s;
+    } */
+
+    /* memberikan transisi keren dari box shadow */
+    /* div:hover{
+      box-shadow: 0px 80px 10px -40px rgba(0, 0, 0, 0.15);
+      margin-top: 40px;
+    } */
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
