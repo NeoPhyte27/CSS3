@@ -1,0 +1,11 @@
+    /* urutan properti asli
+    <x-offset>-<y=offset>-<blur>-<color/rgba> */
+
+    opsional
+    inset-<x-offset>-<y=offset>-<blur>-<spread>(ukuran bayangan)-<color/rgba>*/
+
+    di box shadow bisa di multiple shadow dengan memisahkan koma(,)
+
+text-shadow 
+di text shadow tidak ada namanya inset dan spread jadi cuma gunakan
+<x-offset>-<y=offset>-<blur>-<color/rgba>
