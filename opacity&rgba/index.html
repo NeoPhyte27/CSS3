@@ -4,23 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Opacity</title>
-
   <style>
     body{
-      background-image: url(/background2.png);
+      background-image: url(/opacity&rgba/background2.png);
     }
+    /* mengetahui opacity */
+    /* div{
+      width: 300px;
+      height: 300px;
+      background-color: #f60;
+      opacity: 0.8;
+    } */
 
+/* dengan rgba (red, green, blue, alpha) dan hsla (hue, saturation, lightness, alpha) */
     .satu{
       width: 300px;
       height: 300px;
-      background-color: hsla(24, 100%, 68%, 0.7);
+      background-color: rgba(255, 102, 0, .9);
       position: relative;
+      
     }
-
-    .dua{
+    .dua {
       width: 100px;
       height: 100px;
-      background-color: blue;
+      background-color:hsla(245, 100%, 50%, .5);
       position: absolute;
       right: -50px;
       bottom: -50px;
