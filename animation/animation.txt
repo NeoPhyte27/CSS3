@@ -1,0 +1,33 @@
+menggunakan animation mempuanya keyframe yang dimana di buat dulu keyframe nya dan di masukkan ke dalam animation nya
+
+property di animation yang harus di buat
+@keyframe [name(bebas)] {
+    from(bisa di ganti dengan %) {
+        [property-css]
+    }
+    to(bisa di ganti dengan %) {
+        [property-css]
+    }
+}
+
+cara masukkan animationnya
+    - name => (nama animasinya)
+    - duration => s / ms
+    - fungsi / timing function => sama seperti fungsi transisi
+    - delay => s / ms
+    - iteration-count (perulangan animasinya)
+        1. angka( default = 1)
+        2. infinite
+    - direction
+        1. normal ( default )
+        2. reverse (dari akhir baru ke awal)
+        3. alternate ( bergantian dari awal ke akhir dan dari akhir ke awal)
+        4. alternate-reverse ( bergantian tetapi memulai nya dari akhir dahulu baru ke awal )
+    - fill-mode
+        1. none
+        2. forwards ( akan berhenti di tempat akhirnya)
+        3. backwards ( akan berhenti di awal )
+        4. both
+    - play-state
+        1. running ( default )
+        2. paused
