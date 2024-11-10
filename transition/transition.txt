@@ -1,0 +1,42 @@
+Properti transition memungkin kita dapat mengubah nilai dari property HTML secara halus
+
+perbedaan transition dan animation
+transition 
+    - keadaan awal dan akhirnya
+animation
+    - memiliki keyframe
+    - keadaan nya bisa di permainkan sebuah element
+
+property transition
+[property] <durasi (wajib)> [fungsi] [delay];
+value yang wajib hanya durasi dan selain itu opsional
+- property
+    1. all
+    2. <nama property>
+    3. none
+di dalam transition properti apa saja yang bisa di ubah
+- background-color          - top, lef, bottom, right
+- background-position     - margin, padding
+- background-size            - width height
+- border                            - opacity
+- color                               - transform
+- filter                                - word-spacing
+- font-size                         - letter-spacing
+- line-height                       ....
+
+beberapa properti yang tidak bisa di animasikan atau di ubah
+- font-family       - position
+- display              - ...
+
+    - durasi => s / ms
+    - fungsi(timing function)
+        1. ease(default)
+        2. ease-in ( awal biasa akhir ngebut)
+        3. ease-out
+        4. case-in-out
+        5. linear
+        6. cubic-bezier( w ,x ,y ,z ) => liat di index pergerakan nya mau seperti apa
+    - delay => s / ms ( menunggu delay nya dulu baru melakukan transisi)
+
+simpan transisi di keadaan awal nya
+
