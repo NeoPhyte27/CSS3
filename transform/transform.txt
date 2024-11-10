@@ -1,0 +1,24 @@
+properti transform memungkinkan kita dapat memanipulasi format visual dari elemen HTML
+transform ini sama seperti filter bisa di gabungkan tanpa tanda koma
+
+scale ( memperbesar / memperkecil element ) => jika angka nya makin besar maka akan di lipatkan
+    - scale (angka)=>ukuran mau sebesar apa
+    - scaleX (angka)=>mengubah secara horizontal
+    - scaleY(angka)=>mengubah secara vertikal
+    - scale( X , Y )
+
+rotate ( memutar element )
+	- rotate (deg) sumbunya di tengah
+    - rotateX (deg) sumbu nya di atas jika angkanya tidak negative
+    - rotateY(deg) sumbunya di kiri jika angkanya tidak negative
+
+skew ( membuat condong / miring element )
+	- skew(deg) sama seperti skewX
+    - skewX (deg) bawah kanan memanjang dan atas kiri memanjang
+    - skewY (deg)
+
+translate ( mengubah posisi element ) dimulai dari vertikal ke horizontal
+	- translate(Y, X) => px
+    - translateX(px)
+    - translateY(px)
+translate tidak mempengaruhi element lain, berbeda dengan margin dan position
